@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>벽돌깨기 게임</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-wrap">
+      <h1>벽돌깨기</h1>
+      <div class="hud">
+        <span>점수: <strong id="score">0</strong></span>
+        <span>목숨: <strong id="lives">3</strong></span>
+        <span>레벨: <strong id="level">1</strong></span>
+      </div>
+      <canvas id="gameCanvas" width="800" height="520"></canvas>
+      <p class="help">
+        조작: 좌우 방향키 또는 A/D 이동, 스페이스바 시작/재시작
+      </p>
+      <p id="message" class="message">스페이스바를 눌러 시작하세요</p>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
