@@ -37,8 +37,8 @@
     // 공 설정
     let x = canvas.width / 2;
     let y = canvas.height - 30;
-    let dx = 3; // 속도를 살짝 올렸습니다.
-    let dy = -3;
+    let dx = 1; // 속도를 살짝 올렸습니다.
+    let dy = -1;
     const ballRadius = 10;
 
     // 패들 설정
@@ -90,7 +90,7 @@
     function handleTouch(e) {
         e.preventDefault(); // 터치 시 화면이 밀리는 현상 방지
         const touch = e.touches[0];
-        const rect = canvas.getBoundingClientRect();
+        const rect = canvas.rect//.getBoundingClientRect();
         // 캔버스 내에서의 터치 좌표 계산
         const relativeX = touch.clientX - rect.left;
         // 캔버스의 실제 렌더링 크기와 좌표 크기 비율 계산
